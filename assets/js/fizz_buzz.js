@@ -1,30 +1,22 @@
-function fizzBuzz(number) {
-
-  if(divisibleByThree(number)) {
-    return 'Fizz';
-  }
-  else if(divisibleByFive(number)) {
-    return 'Buzz';
-  }
-  else if(divisibleByFifteen(number)) {
-    return 'FizzBuzz';
-  }
-  else
-    return number;
+function FizzBuzz() {
 }
 
-function hasZeroReminder(number, dividend) {
-  return number % dividend === 0;
+FizzBuzz.prototype.fizzbuzz_calculator = function(num){
+
+
+if (num % 3 === 0 && num % 5 === 0 ){
+  return("FizzBuzz");
 }
 
-function divisibleByThree(number) {
-  return hasZeroReminder(number, 3);
+else if (num % 3 === 0) {
+  return("Fizz");
 }
 
-function divisibleByFive(number) {
-  return hasZeroReminder(number, 5);
-}
+else if (num % 5 === 0){
+  return("Buzz");
 
-function divisibleByFifteen(number) {
-  return hasZeroReminder(number, 15);
-}
+} else {
+  return(num);
+
+ }
+};

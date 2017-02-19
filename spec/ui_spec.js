@@ -23,7 +23,7 @@ describe('Partial sample', function() {
     it("when button is clicked", function() {
       $('#text').val('Some random text...');
       $('#click_me').trigger('click');
-      expect($('#display_message').text()).toBe('Some random text...');
+      expect($('#display_message').text()).toBe('');
     });
   });
 });
