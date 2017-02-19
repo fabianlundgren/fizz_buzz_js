@@ -15,7 +15,7 @@ describe('Partial sample', function() {
 
   afterEach(function() {
     // If you need to reset some values after each testing
-    // you can do it here. 
+    // you can do it here.
   });
 
   describe("displays text", function() {
