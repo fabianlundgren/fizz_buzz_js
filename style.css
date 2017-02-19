@@ -1,0 +1,26 @@
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Pangolin", sans-serif
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+  text-align: center
+}
+
+body {
+    background-color: skyblue;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+tb5 {
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 22px;
+	width: 230px;
+}

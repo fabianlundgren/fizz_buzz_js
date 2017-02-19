@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+    <title>FizzBuzz!</title>
+
+</head>
+<body>
+
+
+  <h1>Welcome to a game of FizzBuzz!</h1>
+
+  <h2>Input your number below!</h2>
+    <form>
+      <input type="text" id="input" placeholder="Numbers go here!">
+      <input type="button" id="play" value="Play!">
+    </form>
+    <div>
+      <span id="display_message"></span>
+
+    </div>
+    <script src="assets/js/fizz_buzz.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+    $('#play').click(function () {
+      var i = ($('#input').val());
+      var calculator = new FizzBuzz();
+      var message = calculator.fizzbuzz_calculator(i);
+      $('#display_message').html(message);
+    });
+  });
+</script>
+  </body>
+</html>
